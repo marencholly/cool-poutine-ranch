@@ -11,13 +11,13 @@ function toggleMenu(){
         for(let counter = 0; counter<=(navItems.length-1); counter++){
             navItems[counter].classList.remove("visible");
         }
-        toggleButton.innerText = "=";
+        toggleButton.innerHTML = `<i class="fas fa-bars"></i>`;
     }else{
         //turn the menu on
         for(let counter = 0; counter<=(navItems.length-1); counter++){
             navItems[counter].classList.add("visible");
         }
-        toggleButton.innerText = "X";
+        toggleButton.innerHTML = `<i class="fas fa-times-circle"></i>`;
     }
 }
 
