@@ -1,0 +1,278 @@
+/* CSS Reset */
+* {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    box-sizing: border-box;
+}
+
+header, nav, main, section, article, footer {
+    display: block;
+}
+
+/* Global Styles */
+body {
+    text-align:center;
+    color:#4b4b4b;
+    font-family:"Montserrat", sans-serif;
+}
+
+/* Header Styles */
+header {
+    font-family:"Italianno", cursive;
+    background-color: #E84855;
+    color: #F9DC5C;
+    font-size:6rem;
+    padding:1.5rem;
+    text-shadow: 0.2rem 0.2rem 0.5rem #4b4b4b;
+}
+
+header h1 {
+    font-weight:100;
+}
+
+header h2 {
+    font-weight:100;
+    font-size:4rem;
+}
+
+.purple {
+    color:#822E81;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #E84855;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    flex: 1;
+}
+
+.link-item {
+    width: 100%;
+    color:#F9DC5C;
+    text-decoration:none;
+    font-size:1.5rem;
+    display: block;
+    padding: 1rem 0;
+    transition: background-color 500ms ease-in-out;
+}
+
+.link-item:hover,
+.link-item:focus {
+    background-color:#75171e;
+}
+
+.mobile-menu-button {
+    display:none;
+}
+
+/* Main Styles */
+main {
+    margin:1rem 0;
+    padding: 0 2rem;
+}
+
+section h2 {
+    font-size:2rem;
+}
+
+h3 {
+    font-size:1.5rem;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+.about-section {
+    background-color: #822E81;
+    color:#5DA271;
+    font-size:1.2rem;
+    padding:2rem;
+    margin:1rem 5%;
+    border-radius:1rem;
+    box-shadow:0.5rem 0.5rem 2rem #4b4b4b;
+}
+
+p {
+    margin:1rem 0;
+}
+
+.contact-section {
+    padding: 2rem;
+}
+
+.flex-panel {
+    margin: 2rem 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.flex-container {
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.left-flex-element,
+.right-flex-element {
+    padding: 1rem 2rem;
+    flex:1;
+}
+
+/* .left-flex-element {
+    flex:1;
+}
+
+.right-flex-element {
+    flex:2;
+} */
+
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Table Styles */
+table {
+    width:100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th,td {
+    padding:0.5rem 2rem;
+}
+
+caption {
+    font-size:1.2rem;
+}
+
+th {
+    background-color: #822E81;
+    color: #5DA271;
+}
+
+tr:nth-child(even) {
+    color: #ffffff;
+    background-color: #4b4b4b;
+}
+
+tr:nth-child(odd) {
+    color: #ffffff;
+    background-color: #7e7e7e;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+    width:90%;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #822E81;
+    color:#5DA271;
+    padding:2rem;
+    font-size:1.2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width:426px) {
+    h1{
+        font-size:2.1rem;
+    }
+
+    header h2 {
+        font-size:1.2rem;
+    }
+
+    .nav-bar{
+        flex-direction:column;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .visible {
+        display: block;
+    }
+
+    .link-item {
+        font-size: 1rem;
+    }
+
+    .mobile-menu-button {
+        display: flex;
+        flex-direction:row;
+        color:#F9DC5C;
+        justify-content: space-between;
+    }
+
+    .mobile-menu-heading {
+        padding: 0 3rem;
+    }
+
+    .mobile-menu-toggle {
+        padding: 0 3rem;
+    }
+
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    section h2 {
+        font-size:1.5rem;
+    }
+    
+    h3 {
+        font-size:1.2rem;
+    }
+    
+    img {
+        border-radius: 0.5rem;
+    }
+    
+    .about-section {
+        font-size:1rem;
+        padding:1rem;
+        margin:0.5rem 5%;
+        border-radius:0.5rem;
+    }
+    
+    p {
+        margin:0.5rem 0;
+    }
+    
+    .contact-section {
+        padding: 1rem;
+    }
+    
+    .flex-panel {
+        flex-direction: column;
+    }
+    
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    .flex-reverse {
+        flex-direction: column;
+    }
+
+    footer {
+        padding:1rem;
+        font-size:1rem;
+    }
+}
