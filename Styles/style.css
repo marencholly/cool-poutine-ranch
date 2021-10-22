@@ -204,7 +204,8 @@ footer {
         display: none;
     }
 
-    .visible {
+    /* instead of adding the visible class to the nav-item elements individually, we can actually just add it to the parent element and use parenting in CSS to effect all of our nav-item elements! */
+    .visible .nav-item{
         display: block;
     }
 
